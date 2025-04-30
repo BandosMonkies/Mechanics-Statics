@@ -136,7 +136,10 @@
             let pi = parseFloat(document.getElementById("num4").value);
             let resultBox = document.getElementById("result");
             let output = "";
-
+            if (theta<-90 || theta>90){
+                
+                
+            }
             theta = theta * Math.PI / 180;
             pi = pi * Math.PI / 180;
             
@@ -146,6 +149,8 @@
                 resultBox.style.display = "block";
                 return; 
             }
+
+            
 
             if (!isNaN(force) && !isNaN(radius) && !isNaN(theta) && !isNaN(pi)) {
                 let moment_o = 0;
