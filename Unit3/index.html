@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Assignment-III</h1>
+<div class="container">
+    <div class="left-half">
+        <img src="Question.jpg" alt="Question" width="500" height="500">
+    </div>
+
+    <div class="right-half">
+        <div style="vertical-align: middle;">
+            <input type="number" placeholder="Height in mm" name="text" class="input" id="h-height">
+        </div>
+
+        <div style="vertical-align: middle;">
+
+            <!-- ****************************************************************************************** -->
+
+            <div class="buttons" style="max-height: 100px;">
+                <button class="blob-btn" onclick="Compute()">
+                  Calculate
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                <br/>
+                <div id="result"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+
+            <!-- ****************************************************************************************** -->
+        </div>
+    </div>
+</div> 
+</body>
+</html>
