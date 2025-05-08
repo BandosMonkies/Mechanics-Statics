@@ -146,8 +146,8 @@
             theta = theta * Math.PI / 180;
             pi = pi * Math.PI / 180;
             
-            if (radius < 0) {
-                resultBox.innerText = "Radius cannot be negative!";
+            if (radius <= 0) {
+                resultBox.innerText = "Radius cannot be negative or zero!";
                 resultBox.style.color = "#FFAA33";
                 resultBox.style.display = "block";
                 return; 
