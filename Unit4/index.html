@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Force Calculation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 200px;
+            padding: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+        #result, #case {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .form-section {
+            flex: 1;
+        }
+        .image-section {
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Force Calculation</h1>
+
+    <div class="container">
+        <div class="form-section">
+            <label>Mass of top block (kg): <input type="number" id="m1" step="any"></label>
+            <label>Mass of middle block (kg): <input type="number" id="m2" step="any"></label>
+            <label>Mass of bottom block (kg): <input type="number" id="m3" step="any"></label>
+            <label>Friction coefficient (top-middle): <input type="number" id="mu1" step="any"></label>
+            <label>Friction coefficient (middle-bottom): <input type="number" id="mu2" step="any"></label>
+            <label>Friction coefficient (bottom-ground): <input type="number" id="mu3" step="any"></label>
+            <button onclick="calculateForce()">Calculate</button>
+            <div id="result">Required force (N):</div>
+            <div id="case">Case:</div>
+        </div>
+        <div class="image-section">
+            <img src="friction.png" alt="Friction Diagram">
+        </div>
+    </div>
+
+</body>
+</html>
