@@ -40,7 +40,7 @@ function calculateForce() {
         const F3 = mu3 * (N1 + N2 + N3);
 
         let case_a = mu1*m1*g + mu2*(m1*g+m2*g);
-        let case_b = mu1*m1*g + mu3*(m1*+m2*g+m3*g);
+        let case_b = mu1*m1*g + mu3*(m1*g+m2*g+m3*g);
 
         let P, caseText;
 
@@ -52,7 +52,7 @@ function calculateForce() {
             caseText = "Case (a) : Middle block moves; bottom block doesn't";
         }
 
-        P -= 88.20;
+        //P -= 88.20;
 
         document.getElementById("result").innerText = `Required force (N): ${P.toFixed(2)}`;
         document.getElementById("case").innerText = caseText;
