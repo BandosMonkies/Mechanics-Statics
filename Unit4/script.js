@@ -20,7 +20,7 @@ function calculateForce() {
         }
 
         // Check for friction coefficient >= 1
-        if ((mu1 >= 1 && mu1<0) || (mu2 >= 1 && mu2<0) || (mu3 >= 1 && mu3<0) ) {
+        if ( mu1 >= 1 || mu2 >= 1 || mu3 >= 1 ) {
             alert("Friction coefficients must be less than 1.");
             return;
         }
